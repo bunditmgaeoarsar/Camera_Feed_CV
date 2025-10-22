@@ -2,7 +2,7 @@
 
 This project allows you to:
 - Monitor multiple live camera streams (HTTP, RTSP)
-- Check connection and metadata (resolution, codec, FPS)
+- Check connection 
 - Capture snapshots of online streams
 - Convert HTTP MJPEG feeds into RTSP streams using **FFmpeg + MediaMTX**
 
@@ -103,21 +103,22 @@ Each line represents one camera feed (HTTP or RTSP).
 
 ## 🔍 Step 7: Run the Stream Checker
 
-The script `check_streams_status.py` will:
+The script `simple_stream_check.py` will:
 
 -   Check each camera connection
     
--   Log results in `stream_check_log.txt`
+-   Log results in `simple_stream_log.txt`
     
--   Save snapshots in `output_capture/`
+-   Save snapshots in `output/`
     
 
 Run:
-
-`python check_streams_status.py` 
-
+```bash
+simple_stream_check.py
+```
 Output example:
-<img width="1327" height="77" alt="image" src="https://github.com/user-attachments/assets/c2d5bf1d-8a0c-4bf5-b014-8cad28129f5d" />
+<img width="1580" height="65" alt="image" src="https://github.com/user-attachments/assets/1632e2c8-5af3-4d71-8573-10822cc7a6ea" />
+
 
 ## Convert HTTP (MJPEG) to RTSP Streams
 
@@ -144,17 +145,6 @@ This will:
 
 💡 You can open this in VLC or OpenCV directly.
 
-----------
-
-### Step 3: Multiple Streams (Optional)
-
-You can run multiple HTTP→RTSP conversions in parallel:
-```bash
-./convert_http_to_rtsp.sh "http://cameraA/mjpeg" cameraA &
-./convert_http_to_rtsp.sh "http://cameraB/mjpeg" cameraB &
-./convert_http_to_rtsp.sh "http://cameraC/mjpeg" cameraC &
-```
-Use `jobs` or `ps aux | grep ffmpeg` to monitor background tasks.
 
 ----------
 
@@ -162,7 +152,7 @@ Use `jobs` or `ps aux | grep ffmpeg` to monitor background tasks.
 
 Once your HTTP streams are converted and listed in `camera_urls.txt` (as RTSP URLs),  
 you can re-run:
-
-`python check_streams_status.py` 
-
+```bash
+python3 simple_stream_check.py
+```
 You’ll now be checking **RTSP streams** (from MediaMTX) instead of raw HTTP MJPEG links.
