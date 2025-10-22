@@ -1,0 +1,7 @@
+# Core dependencies
+opencv-python==4.10.0.84
+requests==2.32.3
+numpy==1.26.4
+
+# Logging and time management
+python-dateutil==2.9.0.post0

@@ -1,0 +1,6 @@
+# camera_name,url
+
+Exterior Street View,http://61.211.241.239/nphMotionJpeg?Resolution=320x240&Quality=Standard
+Interior Warehouse View,http://61.211.241.111/nphMotionJpeg?Resolution=320x240&Quality=Standard
+Exterior RTSP1,rtsp://127.0.0.1:8554/live
+Exterior RTSP2,rtsp://127.0.0.1:8554/live2
