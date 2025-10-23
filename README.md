@@ -129,7 +129,7 @@ you can use the provided **`convert_http_to_rtsp.sh`** script.
 
 ### Step 2: Run the conversion
 ```bash
-./convert_http_to_rtsp.sh "http://61.211.241.239/nphMotionJpeg?Resolution=320x240&Quality=Standard" camera1
+./convert_http_to_rtsp.sh "http://61.211.241.239/nphMotionJpeg?Resolution=320x240&Quality=Standard" live
 ```
 
 This will:
