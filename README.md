@@ -114,7 +114,7 @@ The script `simple_stream_check.py` will:
 
 Run:
 ```bash
-simple_stream_check.py
+python3 simple_stream_check.py
 ```
 Output example:
 <img width="1580" height="65" alt="image" src="https://github.com/user-attachments/assets/1632e2c8-5af3-4d71-8573-10822cc7a6ea" />
