@@ -1,4 +1,4 @@
-# � Camera Feed Computer Vision (CV) Project
+# Camera Feed Computer Vision (CV) Project
 
 This project allows you to:
 - Monitor multiple live camera streams (HTTP, RTSP)
