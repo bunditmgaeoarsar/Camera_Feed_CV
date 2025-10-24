@@ -1,4 +1,4 @@
-# 🎥 Camera Feed Computer Vision (CV) Project
+# � Camera Feed Computer Vision (CV) Project
 
 This project allows you to:
 - Monitor multiple live camera streams (HTTP, RTSP)
@@ -8,14 +8,14 @@ This project allows you to:
 
 ---
 
-## 🧩 Step 1: Clone the Repository
+##  Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/bunditmgaeoarsar/Camera_Feed_CV.git
 cd Camera_Feed_CV
 ```
 
-## ⚙️ Step 2: Install Required Software
+##  Step 2: Install Required Software
 
 This project requires:
 
@@ -26,7 +26,7 @@ This project requires:
 -   **MediaMTX (RTSP server)**
     
 
-### 🐍 Install Python
+###  Install Python
 
 Check if Python is installed:
 ```bash
@@ -36,7 +36,7 @@ If not, install it via Homebrew (macOS/Linux):
 ```bash
 brew install python
 ```
-### 🎞️ Install FFmpeg
+###  Install FFmpeg
 
 FFmpeg is required to convert and stream video feeds.
 ```bash
@@ -46,7 +46,7 @@ To verify:
 ```bash
 ffmpeg -version
 ```
-### 📡 Install MediaMTX
+###  Install MediaMTX
 
 MediaMTX (formerly `rtsp-simple-server`) is the RTSP streaming server.
 ```bash
@@ -58,7 +58,7 @@ Check version:
 ```bash
 mediamtx --version
 ```
-## 🧱 Step 3: Create a Python Virtual Environment
+##  Step 3: Create a Python Virtual Environment
 
 Inside the project folder, create a `venv`:
 ```bash
@@ -67,13 +67,13 @@ python3 -m venv venv
 
 ----------
 
-## 📦 Step 4: Install Packages from `requirements.txt`
+##  Step 4: Install Packages from `requirements.txt`
 
 Activate your environment (see next step), then install the dependencies.
 
 ----------
 
-## 🧠 Step 5: Activate the Virtual Environment
+##  Step 5: Activate the Virtual Environment
 
 ### On macOS / Linux:
 ```bash
@@ -87,7 +87,7 @@ Once activated, install packages:
 ```bash
 pip install -r requirements.txt
 ```
-## 📝 Step 6: Edit `camera_urls.txt`
+##  Step 6: Edit `camera_urls.txt`
 
 Open the file `camera_urls.txt` and add your camera names and URLs.
 
@@ -101,7 +101,7 @@ Each line represents one camera feed (HTTP or RTSP).
 
 ----------
 
-## 🔍 Step 7: Run the Stream Checker
+## � Step 7: Run the Stream Checker
 
 The script `simple_stream_check.py` will:
 
@@ -140,7 +140,7 @@ This will:
     
 -   Re-stream it via MediaMTX as:
     
-    `rtsp://127.0.0.1:8554/camera1` 
+    `rtsp://127.0.0.1:8554/live` 
     
 
 💡 You can open this in VLC or OpenCV directly.
@@ -148,7 +148,7 @@ This will:
 
 ----------
 
-## 🧩 4. Re-run Stream Checker with RTSP Feeds
+##  4. Re-run Stream Checker with RTSP Feeds
 
 Once your HTTP streams are converted and listed in `camera_urls.txt` (as RTSP URLs),  
 you can re-run:
